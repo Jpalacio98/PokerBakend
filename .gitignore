@@ -1,0 +1,16 @@
+# Ignorar bytecode de Python
+__pycache__/
+*.py[cod]
+
+# Ignorar entorno virtual
+env/
+.venv/
+ENV/
+.ENV/
+
+# Ignorar configuración local de VS Code
+.vscode/
+
+# Ignorar archivos de logs u otros temporales (opcional)
+*.log
+*.tmp
