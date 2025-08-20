@@ -1,6 +1,6 @@
 import eventlet
-
-
+import os
+os.environ["EVENTLET_NO_GREENDNS"] = "yes"
 # Aplicar monkey patching al inicio de la aplicación
 eventlet.monkey_patch()
 
@@ -10,6 +10,7 @@ from flask_cors import CORS
 from app.models import game, game_history, user, table, table_player,player, level
 from app import create_app
 from app.extensions import db,socketio
+
 
 
 app = create_app()
