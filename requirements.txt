@@ -8,3 +8,4 @@ Flask-migrate
 eventlet
 faker
 pymysql
+psycopg2-binary
